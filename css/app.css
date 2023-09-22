@@ -262,11 +262,71 @@ img {
     font-weight: 700;
     transition-property: background-color;
     transition-duration: .3s;
-
-
 }
 
 .cursos__enlace:hover {
     background-color: var(--primary);
 }
 
+.blog {
+    margin-bottom: 5rem;
+}
+
+.blog__grid {
+    display: grid;
+    gap: 3rem;
+}
+
+@media (min-width: 768px) {  
+    .blog__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {  
+    .blog__grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.entrada__contenido {
+    padding: 2rem;
+}
+
+.entrada__titulo {
+    font-weight: 400;
+    font-size: 2.4rem;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.entrada__fecha {
+    font-size: 1.6rem;
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.entrada__texto {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    font-size: ;
+}
+
+.entrada__enlace {
+    color: var(--negro);
+    border: 2px solid var(--primary);
+    text-decoration: none;
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 700;
+    transition-property: background-color color;
+    transition-duration: .3s;
+}
+
+.entrada__enlace:hover {
+    background-color: var(--primary);
+    color: var(--blanco);
+}
