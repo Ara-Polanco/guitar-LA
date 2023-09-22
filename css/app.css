@@ -26,7 +26,7 @@ img {
     width: 90%;
 }
 
-[class$="__heading"] {
+[class*="__heading"] {
     font-size: 3.2rem;
     font-weight: 900;
     text-align: center;
@@ -159,7 +159,7 @@ img {
 }
 
 .productos {
-
+    margin-bottom: 5rem;
 }
 
 .productos__grid {
@@ -219,5 +219,54 @@ img {
 .producto__enlace:hover {
     background-color: var(--primary);
     color: var(--blanco);
+}
+
+.cursos {
+    background-image: linear-gradient(to right, rgb(0 0 0 / .65), rgb(0 0 0 / .65) ), url(/img/cursos_bg.jpg);
+    background-position: center;
+    background-size: cover;
+
+    padding: 10rem 0;
+}
+
+@media (min-width: 768px) {  
+    .cursos__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cursos__contenido {
+        grid-column: 2 / 3;
+    }
+    
+}
+
+.cursos__contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cursos__texto {
+    color: var(--blanco);
+    text-align: center;
+}
+
+.cursos__enlace {
+    color: var(--blanco);
+    border: 2px solid var(--primary);
+    text-decoration: none;
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 700;
+    transition-property: background-color;
+    transition-duration: .3s;
+
+
+}
+
+.cursos__enlace:hover {
+    background-color: var(--primary);
 }
 
