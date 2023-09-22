@@ -26,6 +26,14 @@ img {
     width: 90%;
 }
 
+[class$="__heading"] {
+    font-size: 3.2rem;
+    font-weight: 900;
+    text-align: center;
+    color: var(--primary);
+    margin: 3rem 0;
+}
+
 .header {
     background-image: linear-gradient(to right, rgb(0 0 0 / .7), rgb( 0 0 0 /.7)), url(/img/header.jpg);
     background-repeat: no-repeat;
@@ -149,3 +157,67 @@ img {
 .modelo__enlace:hover {
     background-color: var(--primary);
 }
+
+.productos {
+
+}
+
+.productos__grid {
+    display: grid;
+    gap: 3rem;
+}
+
+@media (min-width: 768px) {  
+    .productos__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {  
+    .productos__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.producto {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 1rem;
+    align-items: center;
+}
+
+.producto__nombre {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.producto__descripcion {
+    font-size: 1.6rem;
+}
+
+.producto__precio {
+    color: var(--primary);
+    font-size: 4rem;
+    font-weight: 900;
+    margin: 0;
+}
+
+.producto__enlace {
+    display: block;
+    text-decoration: none;
+    color: var(--negro);
+    padding: 1rem 3rem;
+    border: 2px solid var(--primary);
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    transition-property: background-color color;
+    transition-duration: .3s;
+}
+
+.producto__enlace:hover {
+    background-color: var(--primary);
+    color: var(--blanco);
+}
+
