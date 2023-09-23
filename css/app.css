@@ -277,15 +277,24 @@ img {
     gap: 3rem;
 }
 
+
 @media (min-width: 768px) {  
     .blog__grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
+.blog__grid--pagina {
+    margin-bottom: 3rem;
+}
+
 @media (min-width: 1200px) {  
     .blog__grid {
         grid-template-columns: repeat(4, 1fr);
+    }
+
+    .blog__grid--pagina {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
